@@ -16,8 +16,8 @@ commiting things
 -> git log
 history of commits
 
--> git reset hashid
-to get back to previous commit
+-> git reset --hard hashid
+to get back to previous commit --hard to remove the unstaged files after going to that hashid otherwise files of upper hashid will be there
 
 -> git stash
 save your current staged changes and come back to initial state
@@ -53,3 +53,5 @@ to add origin of repo to your local folder
 -> git reset --hard upstream/main
 -> git push origin main
 to fetch all the commits also deleted one to the main branch from the upstream 
+
+
