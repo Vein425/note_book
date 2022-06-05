@@ -1,0 +1,55 @@
+
+# git notes here !!!!
+
+-> git init 
+initialising git repo
+
+-> git add file.txt 
+to staged files
+
+-> git restore --staged filename.txt   
+to unstage the files
+
+-> git commit -m "something"
+commiting things
+
+-> git log
+history of commits
+
+-> git reset hashid
+to get back to previous commit
+
+-> git stash
+save your current staged changes and come back to initial state
+
+-> git stash pop 
+take back all the save changes back
+
+-> git stash clear
+clear the stash save changes
+
+-> git clone url
+to download the repo
+
+-> git branch name
+to create branch
+
+-> git checkout name
+to change branch
+
+-> git merge name
+to merge branch to main branch
+
+-> git push origin master
+to push the commits of master branch
+
+-> git remote add origin url
+to add origin of repo to your local folder
+
+-> git pull upstream main
+-> git push origin main 
+
+-> git fetch --all --prune
+-> git reset --hard upstream/main
+-> git push origin main
+to fetch all the commits also deleted one to the main branch from the upstream 
