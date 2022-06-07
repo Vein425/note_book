@@ -80,11 +80,65 @@ to lower case the string of variable
 to upper case the string of variable
 
 -> string_var.strip()
-remove tabs and spaces from start and end
+remove tabs, spaces and \n from start and end
 
 -> string_var.split('.')
 to split the character of string and for creating list of character sperating it with '.' delimter default is " "
 
 -> len(string_var)
 no of character in string or length of string
+
+-> len[2:2] = "something"
+it will put the value at givin index and all element will be shifted towards right
+
+-> str_var[2:8:2]
+it will print the element from index 2 to 7 with a jump of 2
+
+-> function
+def fun_name(parameter_var, para_var='2'):
+	return arguments + x
+
+fun_name(argument_var)
+
+-> var_name = open('filename.txt', 'r')
+to open the file in read mode
+
+-> var_name.close()
+to close the file by using variable in which we open the file
+
+-> var_name2 = file.readlines()
+to read all the lines from file
+
+-> newlist.append(line[:-1])
+to remove last character from string 
+
+-> var_name = open('filename.txt', 'w')
+opening file in write mode
+
+-> var_name.write("ok\n")
+this will overwrite the existing data with new one
+
+-> str_var.find('zd')
+it will give index of first occurance of that string -1 output means not find 
+
+-> str_var.count('a')
+count number of a's come in the string
+
+-> import module_name
+importing modules 
+
+-> module_name.fun_name()
+to use any function inside the module
+
+-> default parameter work in order 
+
+-> try except
+
+try:
+	int(var_name)
+	print(var_name)
+except:
+	print("en error occur try another value")
+
+
 
