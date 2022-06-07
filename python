@@ -1,0 +1,90 @@
+
+# !!!!!
+
+-> var_name = True
+creating a variable of boolean datatype
+
+-> var_name2 = input()
+take string value from the user
+
+-> print("hello your" + "  name is ", var_name)
+to print the value of variable 
+
+-> power operator **	
+
+-> intiger division operator //
+ignore decimal value only 
+
+-> int(string_var)
+to changing string data type to integer
+
+-> type(var_name)
+give the datatype of variable
+
+-> 'hello' == 'Hello'
+comparing to string it gives False
+
+-> conditions
+
+if not(1==4 and 1!=2 or 4>=4):
+
+	print("yes")	
+	if 'm'=='m':
+		print("inside")
+   elif 2==2:
+	print("only if first condition fails")
+   else:
+	print("if all condition fails")
+
+-> for loop
+
+for x in range (0,5,2):
+	print(x)
+
+-> while loop
+
+ while i<5:
+	print("infinite")
+	i++
+
+-> list = [2,"hello"]
+creating list 
+
+-> print(list)
+printing list
+
+-> print(list[0])
+print element in index 0 
+
+-> list.append("element")
+adding item in last of the list
+
+-> list[-1] = "last element"
+changing last element of list
+
+-> tuple = ("one",2)
+creating a tuple
+
+-> are tuple immutable ?
+
+-> for fruit in fruit_list :
+	print(fruit)
+
+-> len(list_name)
+give the length of list
+
+-> string_var.lower()
+to lower case the string of variable
+
+-> string_var.upper()
+to upper case the string of variable
+
+-> string_var.strip()
+remove tabs and spaces from start and end
+
+-> string_var.split('.')
+to split the character of string and for creating list of character sperating it with '.' delimter default is " "
+
+-> len(string_var)
+no of character in string or length of string
+
