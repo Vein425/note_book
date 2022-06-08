@@ -161,3 +161,26 @@ class Class_name(Parrent_class):
 		super().__init__(color)
 
 -> can we use parrent class methods?
+
+-> method overloading (changing built in modules)
+
+class Point():
+	def __init__:
+		self.x = x
+		self.y = y
+		self.coords = (self.x, self.y)
+
+	def __gt__(self, p):
+		return self.length() > p.length()
+
+	def __str__(self):
+		return "(" + str(self.x) + "," + str(self.y) + ")"
+	
+	def __len__(self):
+		import math
+		return math.sqrt(self.x**2 + self.y**2)
+p1 = Point(3,4)
+p2 = Point(2,1)
+
+print(p1>p2)
+print(len(p1))
