@@ -140,5 +140,24 @@ try:
 except:
 	print("en error occur try another value")
 
+-> inside the function variable declare as local outside the function variable declare as global. local value can access only inside the function while global value can be access from anywhere to declare global variable inside the function or to change global variable inside the function we use : global var_name
 
+-> variable are instance of classes. variables are object we use method of classes in our variable.
 
+-> classes and object
+
+class Class_name(object):
+	def __init__(self, color):
+		self.color = color
+		print("run automatic after creating object", self.color)
+obj_name = Class_name("blue")
+print(obj_name.color)
+
+-> inheritance
+
+class Class_name(Parrent_class):
+	def __init__(self, color, name):
+		self.name = "Vein"
+		super().__init__(color)
+
+-> can we use parrent class methods?
