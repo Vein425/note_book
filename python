@@ -184,3 +184,44 @@ p2 = Point(2,1)
 
 print(p1>p2)
 print(len(p1))
+
+-> static and class methods
+
+class Dog():
+	dogs = []
+	
+	def __init__(self, name):
+		self.name = name
+		self.dogs.append(self)
+
+	@class method
+	def num_dogs(cls):
+		return len(cls.dogs)
+
+	@static method
+	def bark(n):
+		for _ in range(n):
+			print("bark!")
+
+-> Private and public class
+
+class _Private():
+	def __init__(self, name):
+		self.name = name
+
+class Not_Private():
+	def __init__(self, name):
+		self.name = name
+		self.priv = _Private(name)
+
+	def _display():
+		print("hello")
+
+	def display():
+		print("hi")
+---------------------------------------------
+import mod
+from mod import Not_Private
+
+test = Not_Private("tim")
+test._display() 
