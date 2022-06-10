@@ -270,4 +270,10 @@ a = [1,2,3,4,5]
 c = list(map(add7,filter(isOdd,a))
 print(c)
 
+-> lambda function
+
+a = [1,2,3,4,5]
+newlist = list(map(lambda x:x+5,a))
+print(newlist)
+
 
