@@ -1,28 +1,36 @@
 
 # !!!!!
 
+	_____		_______		    		
+       |     |	\    /	-------	   |	|    ---    --	   |
+       |     |	 \  /	   |	   |____|   |	|   | \	   |	   
+	-----     ||	   |	   |----|   |	|   |  \   |
+       |	  ||	   |	   |	|   |	|   |   \  |
+       |          ||	   |	   |	|    ---    |	 --
+
+
 -> var_name = True
-creating a variable of boolean datatype
+# creating a variable of boolean datatype
 
 -> var_name2 = input()
-take string value from the user
+# take string value from the user
 
 -> print("hello your" + "  name is ", var_name)
-to print the value of variable 
+# to print the value of variable 
 
 -> power operator **	
 
 -> intiger division operator //
-ignore decimal value only 
+# ignore decimal value only 
 
 -> int(string_var)
-to changing string data type to integer
+# to changing string data type to integer
 
 -> type(var_name)
-give the datatype of variable
+# give the datatype of variable
 
 -> 'hello' == 'Hello'
-comparing to string it gives False
+# comparing to string it gives False
 
 -> conditions
 
@@ -48,51 +56,49 @@ for x in range (0,5,2):
 	i++
 
 -> list = [2,"hello"]
-creating list 
+# creating list 
 
 -> print(list)
-printing list
+# printing list
 
 -> print(list[0])
-print element in index 0 
+# print element in index 0 
 
 -> list.append("element")
-adding item in last of the list
+# adding item in last of the list
 
 -> list[-1] = "last element"
-changing last element of list
+# changing last element of list
 
 -> tuple = ("one",2)
-creating a tuple
-
--> are tuple immutable ?
+# creating a tuple
 
 -> for fruit in fruit_list :
 	print(fruit)
 
 -> len(list_name)
-give the length of list
+# give the length of list
 
 -> string_var.lower()
-to lower case the string of variable
+# to lower case the string of variable
 
 -> string_var.upper()
-to upper case the string of variable
+# to upper case the string of variable
 
 -> string_var.strip()
-remove tabs, spaces and \n from start and end
+# remove tabs, spaces and \n from start and end
 
 -> string_var.split('.')
-to split the character of string and for creating list of character sperating it with '.' delimter default is " "
+# to split the character of string and for creating list of character sperating it with '.' delimter default is " "
 
 -> len(string_var)
-no of character in string or length of string
+# no of character in string or length of string
 
 -> len[2:2] = "something"
-it will put the value at givin index and all element will be shifted towards right
+# it will put the value at givin index and all element will be shifted towards right
 
 -> str_var[2:8:2]
-it will print the element from index 2 to 7 with a jump of 2
+# it will print the element from index 2 to 7 with a jump of 2
 
 -> function
 def fun_name(parameter_var, para_var='2'):
@@ -101,34 +107,34 @@ def fun_name(parameter_var, para_var='2'):
 fun_name(argument_var)
 
 -> var_name = open('filename.txt', 'r')
-to open the file in read mode
+# to open the file in read mode
 
 -> var_name.close()
-to close the file by using variable in which we open the file
+# to close the file by using variable in which we open the file
 
 -> var_name2 = file.readlines()
-to read all the lines from file
+# to read all the lines from file
 
 -> newlist.append(line[:-1])
-to remove last character from string 
+# to remove last character from string 
 
 -> var_name = open('filename.txt', 'w')
-opening file in write mode
+# opening file in write mode
 
 -> var_name.write("ok\n")
-this will overwrite the existing data with new one
-
+# this will overwrite the existing data with new one
+ 
 -> str_var.find('zd')
-it will give index of first occurance of that string -1 output means not find 
+# it will give index of first occurance of that string -1 output means not find 
 
 -> str_var.count('a')
-count number of a's come in the string
+# count number of a's come in the string
 
 -> import module_name
-importing modules 
+# importing modules 
 
 -> module_name.fun_name()
-to use any function inside the module
+# to use any function inside the module
 
 -> default parameter work in order 
 
@@ -153,7 +159,7 @@ class Class_name(object):
 obj_name = Class_name("blue")
 print(obj_name.color)
 
--> inheritance
+-> inheritance	 # taking use of parrent class
 
 class Class_name(Parrent_class):
 	def __init__(self, color, name):
@@ -162,8 +168,8 @@ class Class_name(Parrent_class):
 
 -> can we use parrent class methods?
 
--> method overloading (changing built in modules)
-
+-> method overloading	 #changing built in modules
+	
 class Point():
 	def __init__:
 		self.x = x
@@ -185,7 +191,8 @@ p2 = Point(2,1)
 print(p1>p2)
 print(len(p1))
 
--> static and class methods
+-> static and class methods	
+# class method must include class parameter cls while static method doesn't need to include self or cls
 
 class Dog():
 	dogs = []
@@ -203,7 +210,10 @@ class Dog():
 		for _ in range(n):
 			print("bark!")
 
--> Private and public class
+print(Dog.num_dogs())
+print(Dog.dogs)
+
+-> Private and public class	# starting name with _ represent private 
 
 class _Private():
 	def __init__(self, name):
@@ -225,3 +235,39 @@ from mod import Not_Private
 
 test = Not_Private("tim")
 test._display() 
+
+-> optional parameter
+
+def func(word, add = 5, freq = 1):
+	print(word*freq)
+
+func("meow")
+
+-> True = 1?
+
+-> map function		# to use a function in every element of list
+
+li = [1,2,3,4,5]
+
+def func(x):
+	return x**x
+
+print(list(map(func,li)))
+
+or
+
+print([func(x) for x in li if x%2==0])
+
+-> filter function	# to filter the list
+
+def add7(x):
+	return x+7
+
+def isOdd(x):
+	return x%2==0    # other than zero all value are true even strings
+
+a = [1,2,3,4,5]
+c = list(map(add7,filter(isOdd,a))
+print(c)
+
+
