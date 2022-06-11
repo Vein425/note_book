@@ -276,4 +276,67 @@ a = [1,2,3,4,5]
 newlist = list(map(lambda x:x+5,a))
 print(newlist)
 
+-> Collections 		
 
+import collections
+from collections import Counter
+
+a = Counter("gallad")
+b = Counter(['a','b','b'])
+c = Counter({'a':2,'b':1})
+d = Counter(cats=2, dogs=4)
+
+print(a,b,c,d)		# count the character and print in dictionary view
+
+print(d['cats'])
+
+print(list(d.elements()))
+print(b.most_common(2))
+
+e = Counter(a=4, b=2,c=0)
+f = ['a','a','b','c']
+e.subtract(f)
+e.update(f)
+e.clear()
+print(e+f)
+print(e-f)
+print(e & f)	# min element 0 not shown
+print(e | f)	# max element
+print(e)
+
+-> named tuples
+
+import collections
+from collections import namedtuple
+
+Point = namedtuple("Point","x y z")
+
+newp = Point(3,4,5)
+
+print(newp.x,newp.y,newp.z)
+print(newp._fields)
+
+newp = newp._replace(x=4)
+print(newp)
+
+p2 = Point._make(['a','b','c'])
+print(p2)
+
+-> deque
+
+import collections
+from collections import deque
+
+d = deque("hello",maxlen=5)
+d.pop()
+d.popleft()
+
+d.clear()
+
+d.extend('456')
+d.extend([1,2,3])
+d.extendleft("hey")
+
+d.rotate(-2)
+
+d.append(2)
