@@ -333,3 +333,6 @@ d.extendleft("hey")
 d.rotate(-2)
 
 d.append(2)
+
+
+
