@@ -147,4 +147,35 @@ for(i=0;i<2;i++){
 	}
 }
 
+-> printf("%p", &age);	# to print the address of age we use %p 
 
+-> modifing value == modifing address?
+
+-> int *pName = &name;
+
+-> printf("%p", pAge);		# to print the address in pAge variable 
+
+-> printf("%d", *pAge);		# to print the value at pointing address
+
+-> printf("%d", *&age);		# to print the value at address
+
+-> file I/O
+
+writting...
+
+FILE *fpointer = fopen("file.txt", 'w');
+fprintf(fpointer, "ok write me");
+fclose(fpointer);
+
+appending...
+
+FILE *fpointer = fopen("file.txt", 'a');
+fprintf(fpointer, "append me");
+fclose(fpointer);
+
+reading...
+
+FILE *fpointer = fopen("file.txt", 'r');
+fgets(line, 255, fpointer);
+printf("%s", line);
+fclose(fpointer);
