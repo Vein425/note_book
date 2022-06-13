@@ -175,7 +175,6 @@ fclose(fpointer);
 
 reading...
 
-char line[255];
 FILE *fpointer = fopen("file.txt", 'r');
 fgets(line, 255, fpointer);
 printf("%s", line);
