@@ -1,0 +1,83 @@
+
+# !!!!
+
+
+# linking css file
+
+-> <link rel="stylesheet" type="text/css" href="../css/style.css">	
+
+# element selector
+p{
+	color: red;
+}
+
+# class selector
+.class_name{
+	color: blue;
+}
+
+# id selector
+#id-name{
+	color: black;
+}
+
+# changing color using class
+-> <h1 class="name">color me</h1>
+
+.name{
+	color: blue;
+}
+
+#changing color using id
+-> <h1 id="id-name">blue me</h1>
+
+#id-name{
+	color: black;
+}
+
+# specificity
+-> element selector < class selector < id selector < style 
+
+-> Pseudoselector
+
+# on hover on h2
+h2:hover {
+	color: red;
+}
+
+# first list child
+li:fist-child{
+	color: white;
+}
+
+# last list child
+li:last-child{
+	color: green;
+}
+
+# every 4th child of list
+li:nth-child(4){
+	color: blue;
+}
+
+#list which have only one child
+li:only-child{
+	color: purple;
+}
+
+-> using Pseudo in link (a tags)
+
+#google-link:link {
+	color: blue;
+}
+
+#google-link:visited{
+	color: green;
+}
+
+-> advance selector
+
+# changing color of ever anchor following h2
+h2 + a{
+	color: blue;
+}
