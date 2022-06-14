@@ -98,3 +98,24 @@ ul > li{
 ul li{
 	color: black;
 }
+
+-> attribute selector
+
+# src start with 
+img[src^="../img/"]{
+	border: 10px solid black;
+}
+
+# src ends with
+img[src$="../img/"]{
+	border: 10px solid black;
+}
+
+# src containes any where
+img[src*="../img/"]{
+	border: 10px solid black;
+}
+
+-> <h1 class="class1 class2"></h1>
+
+
