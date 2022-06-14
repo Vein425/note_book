@@ -81,3 +81,20 @@ li:only-child{
 h2 + a{
 	color: blue;
 }
+
+# after textarea but in same parrent
+textarea ~ button{
+	color: white;
+}
+
+-> if nested parrent of button?
+
+# every child of ul
+ul > li{
+	color: blue;
+}
+
+# every li inside ul
+ul li{
+	color: black;
+}
