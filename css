@@ -118,4 +118,14 @@ img[src*="../img/"]{
 
 -> <h1 class="class1 class2"></h1>
 
+# class seperated with space
+h1[class~=class2]{
+	background = blue;
+}
+
+# select all class which contain something after article
+h2[class |= "article"]{
+	background = black;
+}
+
 
